@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2020-10-22">
+
+<title>didactic - Stock Market Analysis of Microsoft, Zoom, and Snowflake</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">didactic</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">About</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Stock Market Analysis of Microsoft, Zoom, and Snowflake</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 22, 2020</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="daily-return-and-cumulative-returns" class="level2">
+<h2 class="anchored" data-anchor-id="daily-return-and-cumulative-returns">Daily Return and Cumulative Returns</h2>
+<p>This post includes code adapted from <a href="https://udemy.com/python-for-finance-and-trading-algorithms/">python for finance and trading algorithms udemy course</a> and <a href="https://github.com/theoneandonlywoj/Python-for-Financial-Analysis-and-Algorithmic-Trading">python for finance and trading algorithms udemy course notebooks</a>.</p>
+<div class="cell" data-cell_id="00004-ea2a0262-a0fe-48b4-b9a6-12d8cc997c8b" data-execution_millis="1" data-execution_start="1604716354643" data-source_hash="4e1e59f7">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00005-92d99776-9ad6-4b7e-858c-308d42096b1f" data-execution_start="1604716354645" data-source_hash="d4931dd5">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas_datareader</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00006-dba7d8c6-5e2f-41be-8817-4614bfc5cff2" data-execution_start="1604716354646" data-source_hash="46ee1ef7">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas_datareader.data <span class="im">as</span> web</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00007-8e171469-420c-4711-85ff-047194f20866" data-execution_millis="37" data-execution_start="1604716354647" data-source_hash="3436af09">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>start <span class="op">=</span> datetime.datetime(<span class="dv">2019</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>end <span class="op">=</span> datetime.datetime(<span class="dv">2021</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#start = datetime.datetime(2012, 1, 1)</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#end = datetime.datetime(2017, 1, 1)</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#tesla = web.DataReader("TSLA", 'yahoo', start, end)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00008-29317489-f866-492d-affc-9b1ca999eaa7" data-execution_millis="1141" data-execution_start="1604716354685" data-source_hash="def21ada">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock <span class="op">=</span> web.DataReader(<span class="st">'MSFT'</span>, <span class="st">'yahoo'</span>, start, end)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>MSFT_stock.head()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>ZOOM_stock <span class="op">=</span> web.DataReader(<span class="st">'ZM'</span>, <span class="st">'yahoo'</span>, start, end)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>ZOOM_stock.head()</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>TSLA_stock <span class="op">=</span> web.DataReader(<span class="st">'TSLA'</span>, <span class="st">'yahoo'</span>, start, end)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>TSLA_stock.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="179">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2019-01-02</th>
+      <td>63.026001</td>
+      <td>59.759998</td>
+      <td>61.220001</td>
+      <td>62.023998</td>
+      <td>58293000.0</td>
+      <td>62.023998</td>
+    </tr>
+    <tr>
+      <th>2019-01-03</th>
+      <td>61.880001</td>
+      <td>59.476002</td>
+      <td>61.400002</td>
+      <td>60.071999</td>
+      <td>34826000.0</td>
+      <td>60.071999</td>
+    </tr>
+    <tr>
+      <th>2019-01-04</th>
+      <td>63.599998</td>
+      <td>60.546001</td>
+      <td>61.200001</td>
+      <td>63.537998</td>
+      <td>36970500.0</td>
+      <td>63.537998</td>
+    </tr>
+    <tr>
+      <th>2019-01-07</th>
+      <td>67.348000</td>
+      <td>63.549999</td>
+      <td>64.344002</td>
+      <td>66.991997</td>
+      <td>37756000.0</td>
+      <td>66.991997</td>
+    </tr>
+    <tr>
+      <th>2019-01-08</th>
+      <td>68.802002</td>
+      <td>65.403999</td>
+      <td>68.391998</td>
+      <td>67.070000</td>
+      <td>35042500.0</td>
+      <td>67.070000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00011-3ce0c550-8af2-48ee-9c32-71762601ddfc" data-execution_millis="254" data-execution_start="1604716355836" data-source_hash="a22ed3c8">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'MSFT_stock'</span>,figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">8</span>),title<span class="op">=</span><span class="st">'Open Price'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'ZOOM_stock'</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'TSLA_stock'</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="181">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7fabf2074c90&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-7-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<hr>
+<div class="cell" data-cell_id="00013-2aadb597-a0b0-404a-b0d4-e9ca04d9bfde" data-execution_millis="253" data-execution_start="1604716356108" data-source_hash="4a56ff5d">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'MSFT_stock'</span>,figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">8</span>),title<span class="op">=</span><span class="st">'Volume Traded'</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'ZOOM_stock'</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'TSLA_stock'</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="182">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7fabf1feab90&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-8-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00014-8594ab92-5a94-463c-bec8-89f8391e8493" data-execution_millis="3" data-execution_start="1604716356364" data-source_hash="9cdd3dba">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Volume'</span>].argmax()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="183">
+<pre><code>291</code></pre>
+</div>
+</div>
+<div class="cell" data-cell_id="00016-f6a15e81-1212-480c-a325-622da062973e" data-execution_start="1604716356416" data-source_hash="c66e4e4">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Total Traded'</span>] <span class="op">=</span> MSFT_stock[<span class="st">'Open'</span>]<span class="op">*</span>MSFT_stock[<span class="st">'Volume'</span>]</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'Total Traded'</span>] <span class="op">=</span> TSLA_stock[<span class="st">'Open'</span>]<span class="op">*</span>TSLA_stock[<span class="st">'Volume'</span>]</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Total Traded'</span>] <span class="op">=</span> ZOOM_stock[<span class="st">'Open'</span>]<span class="op">*</span>ZOOM_stock[<span class="st">'Volume'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00017-91fff2c1-124d-4f94-a27a-17f40f23b610" data-execution_millis="228" data-execution_start="1604716356417" data-source_hash="43f4bd25">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Total Traded'</span>].plot(label<span class="op">=</span><span class="st">'MSFT_stock'</span>,figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">8</span>))</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Total Traded'</span>].plot(label<span class="op">=</span><span class="st">'ZOOM_stock'</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'Total Traded'</span>].plot(label<span class="op">=</span><span class="st">'TSLA_stock'</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Total Traded'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="185">
+<pre><code>Text(0, 0.5, 'Total Traded')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-11-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00018-d37e871a-f657-4efc-8f2b-0b31701dfad8" data-execution_start="1604716356692" data-source_hash="1ecc7473">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Total Traded'</span>].argmax()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="186">
+<pre><code>346</code></pre>
+</div>
+</div>
+<p>MA (Moving Averages)</p>
+<div class="cell" data-cell_id="00020-16de27ef-62e2-4d54-859d-3310d5008274" data-execution_millis="199" data-execution_start="1604716356693" data-source_hash="bc16bfaf">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'MA50'</span>] <span class="op">=</span> ZOOM_stock[<span class="st">'Open'</span>].rolling(<span class="dv">50</span>).mean()</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'MA200'</span>] <span class="op">=</span> ZOOM_stock[<span class="st">'Open'</span>].rolling(<span class="dv">200</span>).mean()</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[[<span class="st">'Open'</span>,<span class="st">'MA50'</span>,<span class="st">'MA200'</span>]].plot(label<span class="op">=</span><span class="st">'ZOOM_stock'</span>,figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="187">
+<pre><code>&lt;AxesSubplot:xlabel='Date'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-13-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00021-27fb6b97-5ae1-43f5-8a55-c61efe540028" data-execution_millis="3" data-execution_start="1604716356896" data-source_hash="e9f00ca3">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas.plotting <span class="im">import</span> scatter_matrix</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>car_comp <span class="op">=</span> pd.concat([MSFT_stock[<span class="st">'Open'</span>],ZOOM_stock[<span class="st">'Open'</span>],SNOW_stock[<span class="st">'Open'</span>]],axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>car_comp.columns <span class="op">=</span> [<span class="st">'MSFT_stock Open'</span>,<span class="st">'ZOOM_stock Open'</span>,<span class="st">'SNOW_stock Open'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00022-68fd9814-6a19-4f3a-b402-c70ae7242be1" data-execution_millis="730" data-execution_start="1604716356909" data-source_hash="516d014d">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can use a semi-colon to remove the axes print outs</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>scatter_matrix(car_comp,figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">8</span>),alpha<span class="op">=</span><span class="fl">0.2</span>,hist_kwds<span class="op">=</span>{<span class="st">'bins'</span>:<span class="dv">50</span>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00023-7fe6bb4a-41da-42b0-b8dc-4d785adb443a" data-execution_millis="1" data-execution_start="1604716357641" data-source_hash="6ec172e">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_finance <span class="im">import</span> candlestick_ohlc</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.dates <span class="im">import</span> DateFormatter, date2num, WeekdayLocator, DayLocator, MONDAY</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00024-9600dc62-224e-4d11-8f6f-cbfe1b878c10" data-execution_millis="4" data-execution_start="1604716357647" data-source_hash="eeacfe00">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Rest the index to get a column of January Dates</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>MSFT_stock_reset <span class="op">=</span> MSFT_stock.loc[<span class="st">'2019-01'</span>:<span class="st">'2019-01'</span>].reset_index()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00025-9a66270b-c831-41dd-b678-96676ec32020" data-execution_millis="3" data-execution_start="1604716357655" data-source_hash="d345041c">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new column of numerical "date" values for matplotlib to use</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>MSFT_stock_reset[<span class="st">'date_ax'</span>] <span class="op">=</span> MSFT_stock_reset[<span class="st">'Date'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> date: date2num(date))</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>MSFT_stock_values <span class="op">=</span> [<span class="bu">tuple</span>(vals) <span class="cf">for</span> vals <span class="kw">in</span> MSFT_stock_reset[[<span class="st">'date_ax'</span>, <span class="st">'Open'</span>, <span class="st">'High'</span>, <span class="st">'Low'</span>, <span class="st">'Close'</span>]].values]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00026-9f235bcc-5c3e-4f1f-b3f1-f5ede91887d0" data-execution_millis="1" data-execution_start="1604716357661" data-source_hash="2c2f32c3">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>mondays <span class="op">=</span> WeekdayLocator(MONDAY)        <span class="co"># major ticks on the mondays</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>alldays <span class="op">=</span> DayLocator()              <span class="co"># minor ticks on the days</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>weekFormatter <span class="op">=</span> DateFormatter(<span class="st">'%b </span><span class="sc">%d</span><span class="st">'</span>)  <span class="co"># e.g., Jan 12</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>dayFormatter <span class="op">=</span> DateFormatter(<span class="st">'</span><span class="sc">%d</span><span class="st">'</span>)      <span class="co"># e.g., 12</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00027-20a3ebcd-1edb-4358-8cba-54af9737bc02" data-execution_millis="234" data-execution_start="1604716357704" data-source_hash="3a89d47a">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>fig.subplots_adjust(bottom<span class="op">=</span><span class="fl">0.2</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_major_locator(mondays)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_minor_locator(alldays)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_major_formatter(weekFormatter)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>candlestick_ohlc(ax, MSFT_stock_values, width<span class="op">=</span><span class="fl">0.6</span>, colorup<span class="op">=</span><span class="st">'g'</span>,colordown<span class="op">=</span><span class="st">'r'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00028-7ca892ae-bb7f-4586-bf34-c5e9cd9c2181" data-execution_millis="1" data-execution_start="1604716357938" data-source_hash="bc66a4e5">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Method 1: Using shift</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'returns'</span>] <span class="op">=</span> (MSFT_stock[<span class="st">'Close'</span>] <span class="op">/</span> MSFT_stock[<span class="st">'Close'</span>].shift(<span class="dv">1</span>) ) <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>MSFT_stock.head()</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'returns'</span>] <span class="op">=</span> MSFT_stock[<span class="st">'Close'</span>].pct_change(<span class="dv">1</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>MSFT_stock.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="195">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+      <th>Total Traded</th>
+      <th>returns</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2019-01-02</th>
+      <td>101.750000</td>
+      <td>98.940002</td>
+      <td>99.550003</td>
+      <td>101.120003</td>
+      <td>35329300.0</td>
+      <td>98.860214</td>
+      <td>3.517032e+09</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2019-01-03</th>
+      <td>100.190002</td>
+      <td>97.199997</td>
+      <td>100.099998</td>
+      <td>97.400002</td>
+      <td>42579100.0</td>
+      <td>95.223351</td>
+      <td>4.262168e+09</td>
+      <td>-0.036788</td>
+    </tr>
+    <tr>
+      <th>2019-01-04</th>
+      <td>102.510002</td>
+      <td>98.930000</td>
+      <td>99.720001</td>
+      <td>101.930000</td>
+      <td>44060600.0</td>
+      <td>99.652115</td>
+      <td>4.393723e+09</td>
+      <td>0.046509</td>
+    </tr>
+    <tr>
+      <th>2019-01-07</th>
+      <td>103.269997</td>
+      <td>100.980003</td>
+      <td>101.639999</td>
+      <td>102.059998</td>
+      <td>35656100.0</td>
+      <td>99.779205</td>
+      <td>3.624086e+09</td>
+      <td>0.001275</td>
+    </tr>
+    <tr>
+      <th>2019-01-08</th>
+      <td>103.970001</td>
+      <td>101.709999</td>
+      <td>103.040001</td>
+      <td>102.800003</td>
+      <td>31514400.0</td>
+      <td>100.502670</td>
+      <td>3.247244e+09</td>
+      <td>0.007251</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00029-9255e25c-2b93-4022-bb4d-a42f181de747" data-execution_start="1604716357977" data-source_hash="71b7eaf4">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'returns'</span>] <span class="op">=</span> TSLA_stock[<span class="st">'Close'</span>].pct_change(<span class="dv">1</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'returns'</span>] <span class="op">=</span> ZOOM_stock[<span class="st">'Close'</span>].pct_change(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00030-ad9afd53-3544-4111-b706-a3635571a8fb" data-execution_millis="2" data-execution_start="1604716357978" data-source_hash="36f95efd">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>TSLA_stock.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="197">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+      <th>Total Traded</th>
+      <th>returns</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2019-01-02</th>
+      <td>63.026001</td>
+      <td>59.759998</td>
+      <td>61.220001</td>
+      <td>62.023998</td>
+      <td>58293000.0</td>
+      <td>62.023998</td>
+      <td>3.568698e+09</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2019-01-03</th>
+      <td>61.880001</td>
+      <td>59.476002</td>
+      <td>61.400002</td>
+      <td>60.071999</td>
+      <td>34826000.0</td>
+      <td>60.071999</td>
+      <td>2.138316e+09</td>
+      <td>-0.031472</td>
+    </tr>
+    <tr>
+      <th>2019-01-04</th>
+      <td>63.599998</td>
+      <td>60.546001</td>
+      <td>61.200001</td>
+      <td>63.537998</td>
+      <td>36970500.0</td>
+      <td>63.537998</td>
+      <td>2.262595e+09</td>
+      <td>0.057697</td>
+    </tr>
+    <tr>
+      <th>2019-01-07</th>
+      <td>67.348000</td>
+      <td>63.549999</td>
+      <td>64.344002</td>
+      <td>66.991997</td>
+      <td>37756000.0</td>
+      <td>66.991997</td>
+      <td>2.429372e+09</td>
+      <td>0.054361</td>
+    </tr>
+    <tr>
+      <th>2019-01-08</th>
+      <td>68.802002</td>
+      <td>65.403999</td>
+      <td>68.391998</td>
+      <td>67.070000</td>
+      <td>35042500.0</td>
+      <td>67.070000</td>
+      <td>2.396627e+09</td>
+      <td>0.001164</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00031-170ebf03-c0cc-4257-b0c6-d31f4015ff8a" data-execution_millis="4" data-execution_start="1604716358012" data-source_hash="31103cd7">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>ZOOM_stock.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="198">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+      <th>Total Traded</th>
+      <th>MA50</th>
+      <th>MA200</th>
+      <th>returns</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2019-04-18</th>
+      <td>66.000000</td>
+      <td>60.320999</td>
+      <td>65.000000</td>
+      <td>62.000000</td>
+      <td>25764700</td>
+      <td>62.000000</td>
+      <td>1.674706e+09</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2019-04-22</th>
+      <td>68.900002</td>
+      <td>59.939999</td>
+      <td>61.000000</td>
+      <td>65.699997</td>
+      <td>9949700</td>
+      <td>65.699997</td>
+      <td>6.069317e+08</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.059677</td>
+    </tr>
+    <tr>
+      <th>2019-04-23</th>
+      <td>74.168999</td>
+      <td>65.550003</td>
+      <td>66.870003</td>
+      <td>69.000000</td>
+      <td>6786500</td>
+      <td>69.000000</td>
+      <td>4.538133e+08</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.050228</td>
+    </tr>
+    <tr>
+      <th>2019-04-24</th>
+      <td>71.500000</td>
+      <td>63.160000</td>
+      <td>71.400002</td>
+      <td>63.200001</td>
+      <td>4973500</td>
+      <td>63.200001</td>
+      <td>3.551079e+08</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>-0.084058</td>
+    </tr>
+    <tr>
+      <th>2019-04-25</th>
+      <td>66.849998</td>
+      <td>62.599998</td>
+      <td>64.739998</td>
+      <td>65.000000</td>
+      <td>3863300</td>
+      <td>65.000000</td>
+      <td>2.501100e+08</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.028481</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00032-97981927-32df-4ec6-8cd4-7edd98089eb4" data-execution_millis="186" data-execution_start="1604716358020" data-source_hash="9768c111">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'returns'</span>].hist(bins<span class="op">=</span><span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="199">
+<pre><code>&lt;AxesSubplot:&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-25-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00033-b7e33b05-208b-4874-8b8d-0e77188d0811" data-execution_millis="181" data-execution_start="1604716358252" data-source_hash="477c9332">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'returns'</span>].hist(bins<span class="op">=</span><span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="200">
+<pre><code>&lt;AxesSubplot:&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-26-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00034-6aa414be-6f09-4f5f-95fb-a654bb993d86" data-execution_millis="151" data-execution_start="1604716358433" data-source_hash="23eb7301">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'returns'</span>].hist(bins<span class="op">=</span><span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="201">
+<pre><code>&lt;AxesSubplot:&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-27-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00035-f2cb0a1b-b92e-4c51-bce8-c6a368022475" data-execution_millis="1034" data-execution_start="1604716358648" data-source_hash="e36b6a20">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'returns'</span>].hist(bins<span class="op">=</span><span class="dv">100</span>,label<span class="op">=</span><span class="st">'MSFT_stock'</span>,figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">8</span>),alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'returns'</span>].hist(bins<span class="op">=</span><span class="dv">100</span>,label<span class="op">=</span><span class="st">'ZOOM_stock'</span>,alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'returns'</span>].hist(bins<span class="op">=</span><span class="dv">100</span>,label<span class="op">=</span><span class="st">'TSLA_stock'</span>,alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="202">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7fabf1902d90&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-28-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00036-a38df27f-8a97-4810-984e-b3e2d068caaf" data-execution_millis="194" data-execution_start="1604716359694" data-source_hash="ac1b5d96">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'returns'</span>].plot(kind<span class="op">=</span><span class="st">'kde'</span>,label<span class="op">=</span><span class="st">'MSFT_stock'</span>,figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'returns'</span>].plot(kind<span class="op">=</span><span class="st">'kde'</span>,label<span class="op">=</span><span class="st">'ZOOM_stock'</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'returns'</span>].plot(kind<span class="op">=</span><span class="st">'kde'</span>,label<span class="op">=</span><span class="st">'TSLA_stock'</span>)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="203">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7fabf11a3e50&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-29-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00037-af290ffb-bcbc-4df8-bef7-4e10a132eda3" data-execution_millis="135" data-execution_start="1604716359906" data-source_hash="39942362">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>box_df <span class="op">=</span> pd.concat([MSFT_stock[<span class="st">'returns'</span>],ZOOM_stock[<span class="st">'returns'</span>],TSLA_stock[<span class="st">'returns'</span>]],axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>box_df.columns <span class="op">=</span> [<span class="st">'MSFT_stock Returns'</span>,<span class="st">' ZOOM_stock Returns'</span>,<span class="st">'TSLA_stock Returns'</span>]</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>box_df.plot(kind<span class="op">=</span><span class="st">'box'</span>,figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">11</span>),colormap<span class="op">=</span><span class="st">'jet'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="204">
+<pre><code>&lt;AxesSubplot:&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-30-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00038-12544555-af1f-4812-8519-0822c46c244b" data-execution_millis="765" data-execution_start="1604716360045" data-source_hash="5952d54c">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>scatter_matrix(box_df,figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">8</span>),alpha<span class="op">=</span><span class="fl">0.2</span>,hist_kwds<span class="op">=</span>{<span class="st">'bins'</span>:<span class="dv">50</span>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-31-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00039-017cd319-5b33-4575-a54a-ce8310f36677" data-execution_millis="762" data-execution_start="1604716360815" data-source_hash="5952d54c">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>scatter_matrix(box_df,figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">8</span>),alpha<span class="op">=</span><span class="fl">0.2</span>,hist_kwds<span class="op">=</span>{<span class="st">'bins'</span>:<span class="dv">50</span>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-32-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00040-09dbea0f-101e-4a81-9eaf-6efd80c45d25" data-execution_millis="141" data-execution_start="1604716361591" data-source_hash="df44a5f7">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>box_df.plot(kind<span class="op">=</span><span class="st">'scatter'</span>,x<span class="op">=</span><span class="st">' ZOOM_stock Returns'</span>,y<span class="op">=</span><span class="st">'MSFT_stock Returns'</span>,alpha<span class="op">=</span><span class="fl">0.4</span>,figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="207">
+<pre><code>&lt;AxesSubplot:xlabel=' ZOOM_stock Returns', ylabel='MSFT_stock Returns'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-33-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="daily-return-and-cumulative-return" class="level2">
+<h2 class="anchored" data-anchor-id="daily-return-and-cumulative-return">Daily Return and Cumulative Return</h2>
+<div class="cell" data-cell_id="00042-7e4d47a6-9ba1-45a0-a092-ed087daf9d88" data-execution_millis="13" data-execution_start="1604716361766" data-source_hash="fa14cb32">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Cumulative Return'</span>] <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> MSFT_stock[<span class="st">'returns'</span>]).cumprod()</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>MSFT_stock.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="208">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+      <th>Total Traded</th>
+      <th>returns</th>
+      <th>Cumulative Return</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2019-01-02</th>
+      <td>101.750000</td>
+      <td>98.940002</td>
+      <td>99.550003</td>
+      <td>101.120003</td>
+      <td>35329300.0</td>
+      <td>98.860214</td>
+      <td>3.517032e+09</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2019-01-03</th>
+      <td>100.190002</td>
+      <td>97.199997</td>
+      <td>100.099998</td>
+      <td>97.400002</td>
+      <td>42579100.0</td>
+      <td>95.223351</td>
+      <td>4.262168e+09</td>
+      <td>-0.036788</td>
+      <td>0.963212</td>
+    </tr>
+    <tr>
+      <th>2019-01-04</th>
+      <td>102.510002</td>
+      <td>98.930000</td>
+      <td>99.720001</td>
+      <td>101.930000</td>
+      <td>44060600.0</td>
+      <td>99.652115</td>
+      <td>4.393723e+09</td>
+      <td>0.046509</td>
+      <td>1.008010</td>
+    </tr>
+    <tr>
+      <th>2019-01-07</th>
+      <td>103.269997</td>
+      <td>100.980003</td>
+      <td>101.639999</td>
+      <td>102.059998</td>
+      <td>35656100.0</td>
+      <td>99.779205</td>
+      <td>3.624086e+09</td>
+      <td>0.001275</td>
+      <td>1.009296</td>
+    </tr>
+    <tr>
+      <th>2019-01-08</th>
+      <td>103.970001</td>
+      <td>101.709999</td>
+      <td>103.040001</td>
+      <td>102.800003</td>
+      <td>31514400.0</td>
+      <td>100.502670</td>
+      <td>3.247244e+09</td>
+      <td>0.007251</td>
+      <td>1.016614</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00043-7003d073-dc1a-4701-a15c-874f53199d89" data-execution_millis="1" data-execution_start="1604716361844" data-source_hash="1b5721b7">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'Cumulative Return'</span>] <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> TSLA_stock[<span class="st">'returns'</span>]).cumprod()</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Cumulative Return'</span>] <span class="op">=</span> (<span class="dv">1</span> <span class="op">+</span> ZOOM_stock[<span class="st">'returns'</span>]).cumprod()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00044-0b8dac72-a891-476a-989b-552f9fefbcaa" data-execution_millis="217" data-execution_start="1604716361846" data-source_hash="dcfd9cf4">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Cumulative Return'</span>].plot(label<span class="op">=</span><span class="st">'MSFT_stock'</span>,figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">8</span>),title<span class="op">=</span><span class="st">'Cumulative Return'</span>)</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'Cumulative Return'</span>].plot(label<span class="op">=</span><span class="st">'TSLA_stock'</span>)</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Cumulative Return'</span>].plot(label<span class="op">=</span><span class="st">'ZOOM_stock'</span>)</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="210">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7fabf0c54650&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-36-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00044-73550e7b-8402-4403-8c9b-da23555b5ce9" data-execution_millis="5" data-execution_start="1604716362066" data-source_hash="3fe7ca8" data-tags="[]">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fbprophet <span class="im">import</span> Prophet</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00045-7c605560-6601-45c7-b098-d1d8636f42c8" data-execution_millis="174" data-execution_start="1604716506520" data-source_hash="321b8351" data-tags="[]">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'ds'</span>] <span class="op">=</span> MSFT_stock.index</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'y'</span>] <span class="op">=</span> MSFT_stock.Open</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> Prophet()</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>m.fit(MSFT_stock)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>INFO:fbprophet:Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO:fbprophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="224">
+<pre><code>&lt;fbprophet.forecaster.Prophet at 0x7fabf0b5e7d0&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-cell_id="00046-46eb6e94-495d-4e40-8139-11ec6cad00e6" data-execution_millis="4" data-execution_start="1604716512679" data-source_hash="8de903a0" data-tags="[]">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>future <span class="op">=</span> m.make_future_dataframe(periods<span class="op">=</span><span class="dv">365</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>future.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="225">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>828</th>
+      <td>2021-11-02</td>
+    </tr>
+    <tr>
+      <th>829</th>
+      <td>2021-11-03</td>
+    </tr>
+    <tr>
+      <th>830</th>
+      <td>2021-11-04</td>
+    </tr>
+    <tr>
+      <th>831</th>
+      <td>2021-11-05</td>
+    </tr>
+    <tr>
+      <th>832</th>
+      <td>2021-11-06</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00047-51dddfc0-2faa-486c-bdf3-900b7bd8be1f" data-execution_millis="1929" data-execution_start="1604716519416" data-source_hash="91d05337" data-tags="[]">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>forecast <span class="op">=</span> m.predict(future)</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>forecast[[<span class="st">'ds'</span>, <span class="st">'yhat'</span>, <span class="st">'yhat_lower'</span>, <span class="st">'yhat_upper'</span>]].tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="226">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ds</th>
+      <th>yhat</th>
+      <th>yhat_lower</th>
+      <th>yhat_upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>828</th>
+      <td>2021-11-02</td>
+      <td>264.480553</td>
+      <td>180.297752</td>
+      <td>351.490936</td>
+    </tr>
+    <tr>
+      <th>829</th>
+      <td>2021-11-03</td>
+      <td>264.454392</td>
+      <td>181.887667</td>
+      <td>348.682850</td>
+    </tr>
+    <tr>
+      <th>830</th>
+      <td>2021-11-04</td>
+      <td>264.470521</td>
+      <td>183.308874</td>
+      <td>351.080864</td>
+    </tr>
+    <tr>
+      <th>831</th>
+      <td>2021-11-05</td>
+      <td>264.680107</td>
+      <td>182.084709</td>
+      <td>351.905134</td>
+    </tr>
+    <tr>
+      <th>832</th>
+      <td>2021-11-06</td>
+      <td>263.754254</td>
+      <td>180.125064</td>
+      <td>351.617704</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00048-6749117f-639a-40be-8ef3-13fd56208f84" data-execution_millis="337" data-execution_start="1604716529789" data-source_hash="50832a8e" data-tags="[]">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>fig1 <span class="op">=</span> m.plot(forecast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-41-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00049-a6e1f714-292a-45f5-b9ee-29a898dd8335" data-execution_millis="441" data-execution_start="1604716543386" data-source_hash="313dd8d9" data-tags="[]">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>fig2 <span class="op">=</span> m.plot_components(forecast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-42-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00050-bb3d843e-c312-426b-b275-887238201c90" data-execution_millis="162" data-execution_start="1604716765184" data-source_hash="38aa7d8f" data-tags="[]">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Open'</span>].plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="230">
+<pre><code>&lt;AxesSubplot:xlabel='Date'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-43-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00051-86e83724-1352-47ce-a7bb-38cac32f3343" data-execution_millis="242" data-execution_start="1604716831837" data-source_hash="2ade6f62" data-tags="[]">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00051-6e41a632-8250-445e-91e8-ab2a2e757fce" data-execution_millis="5" data-execution_start="1604716841114" data-source_hash="85ad070f" data-tags="[]">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock_cycle, MSFT_stock_trend <span class="op">=</span> sm.tsa.filters.hpfilter(MSFT_stock[<span class="st">'Open'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00048-6164ac80-1d1b-4f26-8b98-5490d2205a52" data-execution_millis="3" data-execution_start="1604716856425" data-source_hash="396ac3a9" data-tags="[]">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock_cycle</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="237">
+<pre><code>Date
+2019-01-02   -1.311918
+2019-01-03   -1.097494
+2019-01-04   -1.812243
+2019-01-07   -0.224671
+2019-01-08    0.847869
+                ...   
+2020-11-02   -8.431408
+2020-11-03   -8.845880
+2020-11-04    1.239842
+2020-11-05    9.198111
+2020-11-06    9.350548
+Name: Open_cycle, Length: 468, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-cell_id="00054-54b84a81-cfc7-431c-9205-9264423c967d" data-execution_millis="1" data-execution_start="1604716901442" data-source_hash="936498e" data-tags="[]">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'trend'</span>] <span class="op">=</span> MSFT_stock_trend</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00055-53276525-1dd7-4853-b4da-564195cfdfe0" data-execution_millis="1" data-execution_start="1604717022139" data-source_hash="547daa1b" data-tags="[]">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'trend'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="245">
+<pre><code>Date
+2019-01-02    100.861921
+2019-01-03    101.197493
+2019-01-04    101.532244
+2019-01-07    101.864670
+2019-01-08    102.192132
+                 ...    
+2020-11-02    212.721402
+2020-11-03    212.735880
+2020-11-04    212.780163
+2020-11-05    212.841883
+2020-11-06    212.909447
+Name: trend, Length: 468, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-cell_id="00055-b94f9674-0334-4f29-92d9-d11b47428ccc" data-execution_millis="202" data-execution_start="1604717041882" data-source_hash="6551f5c6" data-tags="[]">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>MSFT_stock[[<span class="st">"trend"</span>, <span class="st">"Open"</span>]].plot(figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="247">
+<pre><code>&lt;AxesSubplot:xlabel='Date'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-49-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00045-867a59de-4706-4858-817d-73fd048288ef" data-execution_millis="84" data-execution_start="1604717400444" data-source_hash="f01cceab" data-tags="[]">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'ds'</span>] <span class="op">=</span> TSLA_stock.index</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'y'</span>] <span class="op">=</span> TSLA_stock.Open</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> Prophet()</span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>m.fit(TSLA_stock)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>INFO:fbprophet:Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO:fbprophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="257">
+<pre><code>&lt;fbprophet.forecaster.Prophet at 0x7fabeaebca10&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-cell_id="00060-b88f86c6-e0ff-411f-be04-7bef62799506" data-execution_millis="56" data-execution_start="1604717255495" data-source_hash="14c89bd6" data-tags="[]">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>TSLA_stock[<span class="st">'cap'</span>] <span class="op">=</span> <span class="fl">8.5</span></span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> Prophet(growth<span class="op">=</span><span class="st">'logistic'</span>)</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>m.fit(TSLA_stock)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>INFO:fbprophet:Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO:fbprophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="251">
+<pre><code>&lt;fbprophet.forecaster.Prophet at 0x7fabf081d190&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-cell_id="00061-8e0e12cb-9f61-497e-a0de-03f491cf05ad" data-execution_start="1604717366532" data-source_hash="e2d20eb1" data-tags="[]">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># future = m.make_future_dataframe(periods=1826)</span></span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="co"># future['cap'] = 600</span></span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a><span class="co"># fcst = m.predict(future)</span></span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a><span class="co"># fig = m.plot(fcst)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-cell_id="00046-b811c6ce-4418-4e29-9787-776ce05b0577" data-execution_millis="4" data-execution_start="1604717403824" data-source_hash="8de903a0" data-tags="[]">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>future <span class="op">=</span> m.make_future_dataframe(periods<span class="op">=</span><span class="dv">365</span>)</span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>future.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="258">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>828</th>
+      <td>2021-11-02</td>
+    </tr>
+    <tr>
+      <th>829</th>
+      <td>2021-11-03</td>
+    </tr>
+    <tr>
+      <th>830</th>
+      <td>2021-11-04</td>
+    </tr>
+    <tr>
+      <th>831</th>
+      <td>2021-11-05</td>
+    </tr>
+    <tr>
+      <th>832</th>
+      <td>2021-11-06</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00047-3cfc19da-fabc-4438-bbd2-4e8c821091bc" data-execution_millis="1973" data-execution_start="1604717405886" data-source_hash="91d05337" data-tags="[]">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>forecast <span class="op">=</span> m.predict(future)</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>forecast[[<span class="st">'ds'</span>, <span class="st">'yhat'</span>, <span class="st">'yhat_lower'</span>, <span class="st">'yhat_upper'</span>]].tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="259">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ds</th>
+      <th>yhat</th>
+      <th>yhat_lower</th>
+      <th>yhat_upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>828</th>
+      <td>2021-11-02</td>
+      <td>1136.958087</td>
+      <td>1029.660624</td>
+      <td>1241.408457</td>
+    </tr>
+    <tr>
+      <th>829</th>
+      <td>2021-11-03</td>
+      <td>1138.386277</td>
+      <td>1029.960322</td>
+      <td>1245.559028</td>
+    </tr>
+    <tr>
+      <th>830</th>
+      <td>2021-11-04</td>
+      <td>1139.054611</td>
+      <td>1027.658532</td>
+      <td>1245.938576</td>
+    </tr>
+    <tr>
+      <th>831</th>
+      <td>2021-11-05</td>
+      <td>1140.980461</td>
+      <td>1031.883548</td>
+      <td>1250.009090</td>
+    </tr>
+    <tr>
+      <th>832</th>
+      <td>2021-11-06</td>
+      <td>1142.201501</td>
+      <td>1037.157758</td>
+      <td>1245.925892</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00048-94f5d595-bd80-4f61-a6e7-7f2b7d5b0dfa" data-execution_millis="276" data-execution_start="1604716437761" data-source_hash="50832a8e" data-tags="[]">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>fig1 <span class="op">=</span> m.plot(forecast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-55-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00049-bb7c5971-70d8-42b0-aed4-6b26dab7757f" data-execution_millis="425" data-execution_start="1604716452603" data-source_hash="313dd8d9" data-tags="[]">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>fig2 <span class="op">=</span> m.plot_components(forecast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-56-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00047-dca49b26-868f-4054-b68f-2275d6394c59" data-execution_millis="186" data-execution_start="1604716362079" data-source_hash="e623f0" data-tags="[]">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'ds'</span>] <span class="op">=</span> ZOOM_stock.index</span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'y'</span>] <span class="op">=</span> ZOOM_stock.Open</span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> Prophet()</span>
+<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a>m.fit(ZOOM_stock)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>INFO:fbprophet:Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+INFO:fbprophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="213">
+<pre><code>&lt;fbprophet.forecaster.Prophet at 0x7fabf0b64790&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-cell_id="00048-d98d48d5-8b78-472e-941a-3ba232c31546" data-execution_millis="5" data-execution_start="1604716362273" data-source_hash="8de903a0" data-tags="[]">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>future <span class="op">=</span> m.make_future_dataframe(periods<span class="op">=</span><span class="dv">365</span>)</span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>future.tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="214">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>754</th>
+      <td>2021-11-02</td>
+    </tr>
+    <tr>
+      <th>755</th>
+      <td>2021-11-03</td>
+    </tr>
+    <tr>
+      <th>756</th>
+      <td>2021-11-04</td>
+    </tr>
+    <tr>
+      <th>757</th>
+      <td>2021-11-05</td>
+    </tr>
+    <tr>
+      <th>758</th>
+      <td>2021-11-06</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00049-c9db7a9c-b4a3-4bdd-b8a8-c9af3b495b00" data-execution_millis="2061" data-execution_start="1604716362280" data-source_hash="91d05337" data-tags="[]">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>forecast <span class="op">=</span> m.predict(future)</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>forecast[[<span class="st">'ds'</span>, <span class="st">'yhat'</span>, <span class="st">'yhat_lower'</span>, <span class="st">'yhat_upper'</span>]].tail()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="215">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>ds</th>
+      <th>yhat</th>
+      <th>yhat_lower</th>
+      <th>yhat_upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>754</th>
+      <td>2021-11-02</td>
+      <td>1498.560150</td>
+      <td>1318.618163</td>
+      <td>1677.021462</td>
+    </tr>
+    <tr>
+      <th>755</th>
+      <td>2021-11-03</td>
+      <td>1500.430463</td>
+      <td>1324.946607</td>
+      <td>1679.133120</td>
+    </tr>
+    <tr>
+      <th>756</th>
+      <td>2021-11-04</td>
+      <td>1502.503460</td>
+      <td>1323.082402</td>
+      <td>1683.102389</td>
+    </tr>
+    <tr>
+      <th>757</th>
+      <td>2021-11-05</td>
+      <td>1505.218307</td>
+      <td>1323.789633</td>
+      <td>1683.789366</td>
+    </tr>
+    <tr>
+      <th>758</th>
+      <td>2021-11-06</td>
+      <td>1499.986193</td>
+      <td>1323.049103</td>
+      <td>1680.953619</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-cell_id="00049-429aea2e-547f-4faf-acfd-f5dc6257f64a" data-execution_millis="302" data-execution_start="1604716364341" data-source_hash="50832a8e" data-tags="[]">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>fig1 <span class="op">=</span> m.plot(forecast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-60-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-cell_id="00051-90c934f4-410f-4e26-81b6-c95b7d6b1540" data-execution_millis="458" data-execution_start="1604716364660" data-source_hash="313dd8d9" data-tags="[]">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>fig2 <span class="op">=</span> m.plot_components(forecast)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="2020-10-22-stock-market-returns_files/figure-html/cell-61-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
