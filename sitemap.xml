@@ -2,434 +2,462 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://davidrkearney.github.io/didactic/about.html</loc>
-    <lastmod>2022-10-02T16:29:18.483Z</lastmod>
+    <lastmod>2022-10-02T16:56:28.601Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/index.html</loc>
-    <lastmod>2022-10-02T16:29:20.239Z</lastmod>
+    <lastmod>2022-10-02T16:56:30.765Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-22-window functions and pivot tables with pyspark.html</loc>
-    <lastmod>2022-10-02T16:29:20.795Z</lastmod>
+    <lastmod>2022-10-02T16:56:31.473Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-10-dask_fiscal-db-to-dask-dataframe.html</loc>
-    <lastmod>2022-10-02T16:29:21.415Z</lastmod>
+    <lastmod>2022-10-02T16:56:32.017Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-15-dask-xgboost-linear-regresion.html</loc>
-    <lastmod>2022-10-02T16:29:22.307Z</lastmod>
+    <lastmod>2022-10-02T16:56:32.577Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-19-stockmarketportfolioanaylsis.html</loc>
-    <lastmod>2022-10-02T16:29:22.799Z</lastmod>
+    <lastmod>2022-10-02T16:56:33.013Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-04-webscraping_example.html</loc>
-    <lastmod>2022-10-02T16:29:23.643Z</lastmod>
+    <lastmod>2022-10-02T16:56:33.736Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-pandas-interoperability.html</loc>
-    <lastmod>2022-10-02T16:29:24.451Z</lastmod>
+    <lastmod>2022-10-02T16:56:34.404Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-08-nlp_tieng_viet.html</loc>
-    <lastmod>2022-10-02T16:29:25.223Z</lastmod>
+    <lastmod>2022-10-02T16:56:35.088Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-19-health_data.html</loc>
-    <lastmod>2022-10-02T16:29:25.863Z</lastmod>
+    <lastmod>2022-10-02T16:56:35.680Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-21-rdds and schemas and data types with pyspark.html</loc>
-    <lastmod>2022-10-02T16:29:26.339Z</lastmod>
+    <lastmod>2022-10-02T16:56:36.188Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-29-pycaret-reg.html</loc>
-    <lastmod>2022-10-02T16:29:27.147Z</lastmod>
+    <lastmod>2022-10-02T16:56:36.944Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-01-15-folium-maps.html</loc>
-    <lastmod>2022-10-02T16:29:27.523Z</lastmod>
+    <lastmod>2022-10-02T16:56:37.316Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-30-nlp with pyspark.html</loc>
-    <lastmod>2022-10-02T16:29:27.995Z</lastmod>
+    <lastmod>2022-10-02T16:56:37.836Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-10-regression-pycaret-2.html</loc>
-    <lastmod>2022-10-02T16:29:28.975Z</lastmod>
+    <lastmod>2022-10-02T16:56:38.556Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-16-pandas-stats-fiscal.html</loc>
-    <lastmod>2022-10-02T16:29:29.563Z</lastmod>
+    <lastmod>2022-10-02T16:56:39.064Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-29-pyquery_for_ebooks_python.html</loc>
-    <lastmod>2022-10-02T16:29:30.111Z</lastmod>
+    <lastmod>2022-10-02T16:56:39.464Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-parameter-tuning.html</loc>
-    <lastmod>2022-10-02T16:29:30.719Z</lastmod>
+    <lastmod>2022-10-02T16:56:39.932Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-18-stocks-timeseries-viz-altair.html</loc>
-    <lastmod>2022-10-02T16:29:31.303Z</lastmod>
+    <lastmod>2022-10-02T16:56:40.332Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-28-pca-with-sklearn.html</loc>
-    <lastmod>2022-10-02T16:29:31.795Z</lastmod>
+    <lastmod>2022-10-02T16:56:40.776Z</lastmod>
+  </url>
+  <url>
+    <loc>https://davidrkearney.github.io/didactic/posts/2020-11-13-Timeseries.html</loc>
+    <lastmod>2022-10-02T16:56:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-02-nlp_ngram.html</loc>
-    <lastmod>2022-10-02T16:29:32.747Z</lastmod>
+    <lastmod>2022-10-02T16:56:41.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://davidrkearney.github.io/didactic/posts/2020-11-11-Pytorch.html</loc>
+    <lastmod>2022-10-02T16:56:42.096Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-18-pyspark-nas.html</loc>
-    <lastmod>2022-10-02T16:29:33.823Z</lastmod>
+    <lastmod>2022-10-02T16:56:42.532Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-healthcare_modeling-copy1.html</loc>
-    <lastmod>2022-10-02T16:29:34.951Z</lastmod>
+    <lastmod>2022-10-02T16:56:43.168Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-01-02-snp-sma-ewma.html</loc>
-    <lastmod>2022-10-02T16:29:35.955Z</lastmod>
+    <lastmod>2022-10-02T16:56:43.564Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-29-clustering with pyspark.html</loc>
-    <lastmod>2022-10-02T16:29:36.543Z</lastmod>
+    <lastmod>2022-10-02T16:56:43.972Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-30-stockmarketportfolioanaylsis_snp.html</loc>
-    <lastmod>2022-10-02T16:29:37.083Z</lastmod>
+    <lastmod>2022-10-02T16:56:44.332Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-01-stockmarketportfolioanaylsis_snp+.html</loc>
-    <lastmod>2022-10-02T16:29:37.631Z</lastmod>
+    <lastmod>2022-10-02T16:56:44.791Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-01-18-datasette-csv-reading.html</loc>
-    <lastmod>2022-10-02T16:29:38.111Z</lastmod>
+    <lastmod>2022-10-02T16:56:45.155Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-02-07-portfolio-optimization.html</loc>
-    <lastmod>2022-10-02T16:29:39.039Z</lastmod>
+    <lastmod>2022-10-02T16:56:45.723Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-01-model-evaluation.html</loc>
-    <lastmod>2022-10-02T16:29:40.303Z</lastmod>
+    <lastmod>2022-10-02T16:56:46.439Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-26-working_with_sqlitedbs_in_jupyter_soccer_pred.html</loc>
-    <lastmod>2022-10-02T16:29:41.051Z</lastmod>
+    <lastmod>2022-10-02T16:56:46.995Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-04-stockmarketportfolioanaylsis_snp_pandas_datareader_sqlite-copy1.html</loc>
-    <lastmod>2022-10-02T16:29:42.431Z</lastmod>
+    <lastmod>2022-10-02T16:56:47.599Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/welcome/index.html</loc>
-    <lastmod>2022-10-02T16:29:43.196Z</lastmod>
+    <lastmod>2022-10-02T16:56:47.931Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-cross-validation.html</loc>
-    <lastmod>2022-10-02T16:29:44.304Z</lastmod>
+    <lastmod>2022-10-02T16:56:48.451Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-17-pyspark-group-by.html</loc>
-    <lastmod>2022-10-02T16:29:45.172Z</lastmod>
+    <lastmod>2022-10-02T16:56:48.887Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-sklearn-preprocessing-example.html</loc>
-    <lastmod>2022-10-02T16:29:45.752Z</lastmod>
+    <lastmod>2022-10-02T16:56:49.375Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-17-dask-nlp-gutenberg-books.html</loc>
-    <lastmod>2022-10-02T16:29:46.332Z</lastmod>
+    <lastmod>2022-10-02T16:56:49.827Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-02-databases_sqllite_sqlalchemy_27-copy1.html</loc>
-    <lastmod>2022-10-02T16:29:46.844Z</lastmod>
+    <lastmod>2022-10-02T16:56:50.275Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-06-07-kwargs-decorators.html</loc>
-    <lastmod>2022-10-02T16:29:47.344Z</lastmod>
+    <lastmod>2022-10-02T16:56:50.711Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-05-causalml-uplift_tree_visualization.html</loc>
-    <lastmod>2022-10-02T16:29:48.216Z</lastmod>
+    <lastmod>2022-10-02T16:56:51.235Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-31-textsummarizer-dickens.html</loc>
-    <lastmod>2022-10-02T16:29:48.916Z</lastmod>
+    <lastmod>2022-10-02T16:56:51.695Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-02-01-newsplease.html</loc>
-    <lastmod>2022-10-02T16:29:49.444Z</lastmod>
+    <lastmod>2022-10-02T16:56:52.059Z</lastmod>
+  </url>
+  <url>
+    <loc>https://davidrkearney.github.io/didactic/posts/2020-11-15-Adam_optimizer.html</loc>
+    <lastmod>2022-10-02T16:56:52.463Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-25-linear regression and random forest_gbt classification with pyspark.html</loc>
-    <lastmod>2022-10-02T16:29:50.408Z</lastmod>
+    <lastmod>2022-10-02T16:56:53.063Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-07-fiscal_data-sqlitedb-copy1.html</loc>
-    <lastmod>2022-10-02T16:29:51.260Z</lastmod>
+    <lastmod>2022-10-02T16:56:53.523Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-06-nlp-sqlitedb.html</loc>
-    <lastmod>2022-10-02T16:29:52.084Z</lastmod>
+    <lastmod>2022-10-02T16:56:53.963Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-03-mcmc.html</loc>
-    <lastmod>2022-10-02T16:29:53.744Z</lastmod>
+    <lastmod>2022-10-02T16:56:54.903Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-02-06-portfolio-allocation-sharpe-ratio.html</loc>
-    <lastmod>2022-10-02T16:29:54.596Z</lastmod>
+    <lastmod>2022-10-02T16:56:55.471Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-02-pandas_prof_shap_values.html</loc>
-    <lastmod>2022-10-02T16:29:58.500Z</lastmod>
+    <lastmod>2022-10-02T16:56:57.778Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-02-08-capital-asset-pricing-model.html</loc>
-    <lastmod>2022-10-02T16:29:59.012Z</lastmod>
+    <lastmod>2022-10-02T16:56:58.266Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-19-ttests-distributions-crosstabs-functions.html</loc>
-    <lastmod>2022-10-02T16:29:59.904Z</lastmod>
+    <lastmod>2022-10-02T16:56:58.902Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-healthcare_modeling_app-copy1.html</loc>
-    <lastmod>2022-10-02T16:30:00.632Z</lastmod>
+    <lastmod>2022-10-02T16:56:59.634Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-eda_sklearn_examples.html</loc>
-    <lastmod>2022-10-02T16:30:01.020Z</lastmod>
+    <lastmod>2022-10-02T16:57:00.042Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-01-23-voila-datasette-blog-post.html</loc>
-    <lastmod>2022-10-02T16:30:01.352Z</lastmod>
+    <lastmod>2022-10-02T16:57:00.410Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-19-textsummarizer-dostoyevesky.html</loc>
-    <lastmod>2022-10-02T16:30:02.288Z</lastmod>
+    <lastmod>2022-10-02T16:57:01.382Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-11-dask-xgboost-fiscal-data.html</loc>
-    <lastmod>2022-10-02T16:30:02.720Z</lastmod>
+    <lastmod>2022-10-02T16:57:01.790Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-28-databases_sqllite_sqlalchemy_27.html</loc>
-    <lastmod>2022-10-02T16:30:03.108Z</lastmod>
+    <lastmod>2022-10-02T16:57:02.222Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-19-pyspark-filtering.html</loc>
-    <lastmod>2022-10-02T16:30:03.516Z</lastmod>
+    <lastmod>2022-10-02T16:57:02.654Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-27-sql_calls_in_jupyter_soccer_pred.html</loc>
-    <lastmod>2022-10-02T16:30:04.116Z</lastmod>
+    <lastmod>2022-10-02T16:57:03.422Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-10-dask-api-eda.html</loc>
-    <lastmod>2022-10-02T16:30:04.480Z</lastmod>
+    <lastmod>2022-10-02T16:57:03.878Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-30-function-for-zillow-data-quandl-api.html</loc>
-    <lastmod>2022-10-02T16:30:04.924Z</lastmod>
+    <lastmod>2022-10-02T16:57:04.410Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/post-with-code/index.html</loc>
-    <lastmod>2022-10-02T16:30:05.240Z</lastmod>
+    <lastmod>2022-10-02T16:57:04.750Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-18-ttests-distributions-crosstabs.html</loc>
-    <lastmod>2022-10-02T16:30:05.644Z</lastmod>
+    <lastmod>2022-10-02T16:57:05.254Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-25-arima-adf-forecasting.html</loc>
-    <lastmod>2022-10-02T16:30:06.128Z</lastmod>
+    <lastmod>2022-10-02T16:57:05.878Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-23-analyzingusinflation.html</loc>
-    <lastmod>2022-10-02T16:30:06.472Z</lastmod>
+    <lastmod>2022-10-02T16:57:06.294Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-16-dask-nlp-gutenberg-books.html</loc>
-    <lastmod>2022-10-02T16:30:06.940Z</lastmod>
+    <lastmod>2022-10-02T16:57:06.758Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-04-02-poisson-regression.html</loc>
-    <lastmod>2022-10-02T16:30:07.736Z</lastmod>
+    <lastmod>2022-10-02T16:57:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-eda_health_data.html</loc>
-    <lastmod>2022-10-02T16:30:09.200Z</lastmod>
+    <lastmod>2022-10-02T16:57:08.857Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-12-dask-xgboost-fiscal-data..html</loc>
-    <lastmod>2022-10-02T16:30:09.752Z</lastmod>
+    <lastmod>2022-10-02T16:57:09.525Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-15-dask-xgboost-linear-regresion-copy1.html</loc>
-    <lastmod>2022-10-02T16:30:10.244Z</lastmod>
+    <lastmod>2022-10-02T16:57:10.073Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-22-analyzingusunemployment.html</loc>
-    <lastmod>2022-10-02T16:30:10.588Z</lastmod>
+    <lastmod>2022-10-02T16:57:10.473Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-missing-values.html</loc>
-    <lastmod>2022-10-02T16:30:11.069Z</lastmod>
+    <lastmod>2022-10-02T16:57:10.985Z</lastmod>
+  </url>
+  <url>
+    <loc>https://davidrkearney.github.io/didactic/posts/2022-10-02-Prophet-Time-Series.html</loc>
+    <lastmod>2022-10-02T16:57:11.405Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-09-health-data-eda.html</loc>
-    <lastmod>2022-10-02T16:30:11.589Z</lastmod>
+    <lastmod>2022-10-02T16:57:11.965Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-22-stock-market-returns.html</loc>
-    <lastmod>2022-10-02T16:30:12.197Z</lastmod>
+    <lastmod>2022-10-02T16:57:12.713Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-20-pyspark-dataframes-data-types.html</loc>
-    <lastmod>2022-10-02T16:30:12.597Z</lastmod>
+    <lastmod>2022-10-02T16:57:13.149Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-06-example_kaggle_project_submission.html</loc>
-    <lastmod>2022-10-02T16:30:12.993Z</lastmod>
+    <lastmod>2022-10-02T16:57:13.605Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-xgboost_health_data.html</loc>
-    <lastmod>2022-10-02T16:30:13.657Z</lastmod>
+    <lastmod>2022-10-02T16:57:14.417Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-25-analyzingsizeofarmedforces.html</loc>
-    <lastmod>2022-10-02T16:30:13.977Z</lastmod>
+    <lastmod>2022-10-02T16:57:14.817Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-review-sklearn.html</loc>
-    <lastmod>2022-10-02T16:30:14.373Z</lastmod>
+    <lastmod>2022-10-02T16:57:15.253Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-31-sklearn-pipelines-example.html</loc>
-    <lastmod>2022-10-02T16:30:14.753Z</lastmod>
+    <lastmod>2022-10-02T16:57:15.665Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-30-classification example 2 using health data with pycaret.html</loc>
-    <lastmod>2022-10-02T16:30:15.345Z</lastmod>
+    <lastmod>2022-10-02T16:57:16.325Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-01-housing_prediction.html</loc>
-    <lastmod>2022-10-02T16:30:15.713Z</lastmod>
+    <lastmod>2022-10-02T16:57:16.749Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-02-05-emails-python.html</loc>
-    <lastmod>2022-10-02T16:30:16.049Z</lastmod>
+    <lastmod>2022-10-02T16:57:17.149Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-05-causalml-tree-based-models.html</loc>
-    <lastmod>2022-10-02T16:30:16.445Z</lastmod>
+    <lastmod>2022-10-02T16:57:17.589Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-05-soccer-fifa-pred-example.html</loc>
-    <lastmod>2022-10-02T16:30:16.833Z</lastmod>
+    <lastmod>2022-10-02T16:57:18.041Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-24-analyzingusrealinterestrate.html</loc>
-    <lastmod>2022-10-02T16:30:17.205Z</lastmod>
+    <lastmod>2022-10-02T16:57:18.473Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-21-stockmarketportfolioanaylsis2.html</loc>
-    <lastmod>2022-10-02T16:30:17.677Z</lastmod>
+    <lastmod>2022-10-02T16:57:19.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://davidrkearney.github.io/didactic/posts/2020-11-14-Text_Generation_LSTM_Dostoevsky.html</loc>
+    <lastmod>2022-10-02T16:57:19.485Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2022-10-01-quant_data_datareader_quandl.html</loc>
-    <lastmod>2022-10-02T16:30:18.057Z</lastmod>
+    <lastmod>2022-10-02T16:57:19.905Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-05-stockmarketportfolioanaylsis_snp_pandas_datareader_sqlite-copy1.html</loc>
-    <lastmod>2022-10-02T16:30:18.509Z</lastmod>
+    <lastmod>2022-10-02T16:57:20.429Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-31-sql_calls_in_jupyter_soccer_explore.html</loc>
-    <lastmod>2022-10-02T16:30:19.001Z</lastmod>
+    <lastmod>2022-10-02T16:57:21.013Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-07-spacy_example.html</loc>
-    <lastmod>2022-10-02T16:30:19.369Z</lastmod>
+    <lastmod>2022-10-02T16:57:21.429Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-03-model-inspection.html</loc>
-    <lastmod>2022-10-02T16:30:19.929Z</lastmod>
+    <lastmod>2022-10-02T16:57:22.032Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-08-15-pyspark-fiscal-data-regression.html</loc>
-    <lastmod>2022-10-02T16:30:20.341Z</lastmod>
+    <lastmod>2022-10-02T16:57:22.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://davidrkearney.github.io/didactic/posts/2020-11-12-Tensorflow_and_Keras.html</loc>
+    <lastmod>2022-10-02T16:57:23.032Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-21-quant_data_datareader_quandl.html</loc>
-    <lastmod>2022-10-02T16:30:20.717Z</lastmod>
+    <lastmod>2022-10-02T16:57:23.484Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-08-dask-day-1.html</loc>
-    <lastmod>2022-10-02T16:30:21.253Z</lastmod>
+    <lastmod>2022-10-02T16:57:24.144Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-09-dask_fiscal-data-sqlite-db.html</loc>
-    <lastmod>2022-10-02T16:30:21.617Z</lastmod>
+    <lastmod>2022-10-02T16:57:24.584Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-01-01-snp-trend-minus-cycle.html</loc>
-    <lastmod>2022-10-02T16:30:21.989Z</lastmod>
+    <lastmod>2022-10-02T16:57:25.008Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-20-dask-diab.html</loc>
-    <lastmod>2022-10-02T16:30:22.373Z</lastmod>
+    <lastmod>2022-10-02T16:57:25.460Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-healthcare_modeling_app.html</loc>
-    <lastmod>2022-10-02T16:30:23.009Z</lastmod>
+    <lastmod>2022-10-02T16:57:26.184Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-02-model-calibration.html</loc>
-    <lastmod>2022-10-02T16:30:23.497Z</lastmod>
+    <lastmod>2022-10-02T16:57:26.692Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-18-groupby_pivot.html</loc>
-    <lastmod>2022-10-02T16:30:23.917Z</lastmod>
+    <lastmod>2022-10-02T16:57:27.172Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-14-dask-xgboost-ht-ohe.html</loc>
-    <lastmod>2022-10-02T16:30:24.301Z</lastmod>
+    <lastmod>2022-10-02T16:57:27.612Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-30-classification using health data with pycaret 1.html</loc>
-    <lastmod>2022-10-02T16:30:24.833Z</lastmod>
+    <lastmod>2022-10-02T16:57:28.132Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-06-04-imbalanced-data.html</loc>
-    <lastmod>2022-10-02T16:30:25.393Z</lastmod>
+    <lastmod>2022-10-02T16:57:28.684Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2021-05-15-bootstrapping.html</loc>
-    <lastmod>2022-10-02T16:30:25.865Z</lastmod>
+    <lastmod>2022-10-02T16:57:29.284Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-11-09-dask-sql.html</loc>
-    <lastmod>2022-10-02T16:30:26.265Z</lastmod>
+    <lastmod>2022-10-02T16:57:29.776Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-10-13-dask-xgboost-fiscal-data.html</loc>
-    <lastmod>2022-10-02T16:30:26.657Z</lastmod>
+    <lastmod>2022-10-02T16:57:30.216Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-12-30-textsummarizer-tieng-viet.html</loc>
-    <lastmod>2022-10-02T16:30:27.057Z</lastmod>
+    <lastmod>2022-10-02T16:57:30.692Z</lastmod>
+  </url>
+  <url>
+    <loc>https://davidrkearney.github.io/didactic/posts/2020-11-17-diab_prediction_with_h2o.html</loc>
+    <lastmod>2022-10-02T16:57:31.500Z</lastmod>
   </url>
   <url>
     <loc>https://davidrkearney.github.io/didactic/posts/2020-09-03-nlp_seaborn_heatmaps.html</loc>
-    <lastmod>2022-10-02T16:30:27.425Z</lastmod>
+    <lastmod>2022-10-02T16:57:31.980Z</lastmod>
   </url>
 </urlset>
