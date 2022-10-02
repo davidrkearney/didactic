@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Statistics Blog Posts">
+
+<title>didactic - T-Tests The Purpose, Assumptions, How it Works, and Corrections.</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">didactic</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">About</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">T-Tests The Purpose, Assumptions, How it Works, and Corrections.</h1>
+                  <div>
+        <div class="description">
+          Statistics Blog Posts
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Statistics</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose:</a></li>
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions:</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it works:</a></li>
+  <li><a href="#corrections" id="toc-corrections" class="nav-link" data-scroll-target="#corrections">Corrections:</a>
+  <ul class="collapse">
+  <li><a href="#bonferroni-correction" id="toc-bonferroni-correction" class="nav-link" data-scroll-target="#bonferroni-correction">Bonferroni Correction</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Normal_Distribution_PDF.svg" title="Credit: Wikipedia" class="img-fluid"></p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose:</h2>
+<p>The purpose of the T-test is to compare if there are mean differences between two groups of interest.</p>
+</section>
+<section id="assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="assumptions">Assumptions:</h2>
+<ul>
+<li>Normal distribution of the dependant variable</li>
+<li>Independent and identically distributed (i.i.d) variables</li>
+</ul>
+</section>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How it works:</h2>
+<p>T-test comparisons use the means, counts and standard deviations of a treatment and control in comparison to an idealized normal distribution to calculate a p value, which by intuition is the likelihood of seeing a mean difference of the same or more extreme magnitude between treatment and control as a result of chance. This is done through a comparison to an idealized normal distribution, through the calculation of a t-statistic. While the test statistic is assumed to follow an idealized normal distribution if the scaling term is known, where the scaling term is unknown and it is instead estimated based on the data, which is assumed to follow the student’s t distribution. This process can be thought of trying to disentangle the signal (mean difference and counts) from the noise variability. Here the mean difference is the direction of the signal and the counts are the strength of the signal.</p>
+</section>
+<section id="corrections" class="level2">
+<h2 class="anchored" data-anchor-id="corrections">Corrections:</h2>
+<p>When we are interested in comparing statistical differences between more than two groups, we may use ANOVA, but if we want to compare differences between more than a single pairwise comparison, we can conduct multiple t-tests. In doing so, we will end up increasing the likelihood of a false positive (type I error) where we are incorrectly rejecting the null hypothesis that there are no statistical differences between groups. One way to address this is to use the Bonferroni correction.</p>
+<section id="bonferroni-correction" class="level3">
+<h3 class="anchored" data-anchor-id="bonferroni-correction">Bonferroni Correction</h3>
+<p>The Bonferroni correction, the namesake of Carlo Emilio Bonferroni, accounts for what we lose in a p-hacking quest in the experimentation, which is the justification for taking p-values at face value. By intuition, when we go searching for significant differences everywhere, the chance of seeing an apparent significant difference by chance anywhere increases. Using the Bonferroni correction, if the starting alpha/significance level is .05 and we are testing 10 hypotheses, then the corrected alpha/significance level we should use would be .005. Understanding the lack of an incentive to make such an adjustment is straightforward. Another way to address this is to first use ANOVA to detect statistical differences between all groups before deciding whether to use t tests to look for pairwise comparisons between groups.</p>
+<pre><code>python ttest.py</code></pre>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
