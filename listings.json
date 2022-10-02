@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2022-10-01-quant_data_datareader_quandl.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html",
       "/posts/2020-10-26-working_with_sqlitedbs_in_jupyter_soccer_pred.html",
