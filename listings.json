@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/2020-01-01-viet-letter-1.html",
       "/posts/2020-11-01-Data-Sources.html",
       "/posts/2020-11-02-statistics-ttests-post.html",
       "/posts/2020-10-12-links.html",
@@ -115,6 +114,7 @@
       "/posts/2020-10-04-stockmarketportfolioanaylsis_snp_pandas_datareader_sqlite-copy1.html",
       "/posts/2020-10-02-databases_sqllite_sqlalchemy_27-copy1.html",
       "/posts/2020-10-01-stockmarketportfolioanaylsis_snp+.html",
+      "/posts/post1/index.html",
       "/posts/2020-09-30-stockmarketportfolioanaylsis_snp.html",
       "/posts/2020-09-28-databases_sqllite_sqlalchemy_27.html",
       "/posts/2020-09-25-analyzingsizeofarmedforces.html",
