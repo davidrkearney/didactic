@@ -2,6 +2,16 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2020-12-12_Healthcare_Modeling-Copy1.html",
+      "/posts/2020-12-31-TextSummarizer-Dickens.html",
+      "/posts/2020-12-23_Healthcare_Modeling_app-Copy1.html",
+      "/posts/2020-12-10_EDA_Health_Data.html",
+      "/posts/2020-12-09-Health-Data-EDA.html",
+      "/posts/2020-12-11_Xgboost_Health_data.html",
+      "/posts/2021-01-01-SNP-trend-minus-cycle.html",
+      "/posts/2020-11-20-Dask-Diab.html",
+      "/posts/2020-12-23_Healthcare_Modeling_app.html",
+      "/posts/2020-12-30-TextSummarizer-tieng-viet.html",
       "/posts/post-with-code/index.html",
       "/posts/2022-10-01-quant_data_datareader_quandl.html",
       "/posts/welcome/index.html",
