@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2020-10-21">
 
-<title>didactic - Using the Quandl API and Pandas Datareader API to call Microsoft, Apple, Zoom, Snowflake stocks and other finance data</title>
+<title>didactic – quant_data_datareader_quandl</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -166,34 +165,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Using the Quandl API and Pandas Datareader API to call Microsoft, Apple, Zoom, Snowflake stocks and other finance data</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">October 21, 2020</p>
-      </div>
-    </div>
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
-
 
 
 
@@ -207,23 +184,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas_datareader.data <span class="im">as</span> web</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>start <span class="op">=</span> datetime.datetime(<span class="dv">2020</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>start <span class="op">=</span> datetime.datetime(<span class="dv">2018</span>, <span class="dv">1</span>, <span class="dv">1</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>end <span class="op">=</span> pd.to_datetime(<span class="st">'today'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>AAPL_stock <span class="op">=</span> web.DataReader(<span class="st">'AAPL'</span>, <span class="st">'yahoo'</span>, start, end)</span>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>AAPL_stock <span class="op">=</span> web.DataReader(<span class="st">'MTCH'</span>, <span class="st">'yahoo'</span>, start, end)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>AAPL_stock.head()</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>MSFT_stock <span class="op">=</span> web.DataReader(<span class="st">'MSFT'</span>, <span class="st">'yahoo'</span>, start, end)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>MSFT_stock.head()</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ZOOM_stock <span class="op">=</span> web.DataReader(<span class="st">'ZM'</span>, <span class="st">'yahoo'</span>, start, end)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>ZOOM_stock.head()</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>SNOW_stock <span class="op">=</span> web.DataReader(<span class="st">'SNOW'</span>, <span class="st">'yahoo'</span>, start, end)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>SNOW_stock.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>MSFT_stock <span class="op">=</span> web.DataReader(<span class="st">'META'</span>, <span class="st">'yahoo'</span>, start, end)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>MSFT_stock.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
 
 <div>
 
@@ -250,82 +221,78 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </thead>
   <tbody>
     <tr>
-      <th>2020-09-16</th>
-      <td>319.0</td>
-      <td>231.110001</td>
-      <td>245.000000</td>
-      <td>253.929993</td>
-      <td>36099700</td>
-      <td>253.929993</td>
+      <th>2018-01-02</th>
+      <td>181.580002</td>
+      <td>177.550003</td>
+      <td>177.679993</td>
+      <td>181.419998</td>
+      <td>18151900</td>
+      <td>181.419998</td>
     </tr>
     <tr>
-      <th>2020-09-17</th>
-      <td>241.5</td>
-      <td>215.240005</td>
-      <td>230.759995</td>
-      <td>227.539993</td>
-      <td>11907500</td>
-      <td>227.539993</td>
+      <th>2018-01-03</th>
+      <td>184.779999</td>
+      <td>181.330002</td>
+      <td>181.880005</td>
+      <td>184.669998</td>
+      <td>16886600</td>
+      <td>184.669998</td>
     </tr>
     <tr>
-      <th>2020-09-18</th>
-      <td>249.0</td>
-      <td>218.589996</td>
-      <td>235.000000</td>
-      <td>240.000000</td>
-      <td>7475400</td>
-      <td>240.000000</td>
+      <th>2018-01-04</th>
+      <td>186.210007</td>
+      <td>184.100006</td>
+      <td>184.899994</td>
+      <td>184.330002</td>
+      <td>13880900</td>
+      <td>184.330002</td>
     </tr>
     <tr>
-      <th>2020-09-21</th>
-      <td>241.5</td>
-      <td>218.600006</td>
-      <td>230.000000</td>
-      <td>228.850006</td>
-      <td>5524900</td>
-      <td>228.850006</td>
+      <th>2018-01-05</th>
+      <td>186.899994</td>
+      <td>184.929993</td>
+      <td>185.589996</td>
+      <td>186.850006</td>
+      <td>13574500</td>
+      <td>186.850006</td>
     </tr>
     <tr>
-      <th>2020-09-22</th>
-      <td>239.0</td>
-      <td>225.149994</td>
-      <td>238.500000</td>
-      <td>235.160004</td>
-      <td>3889100</td>
-      <td>235.160004</td>
+      <th>2018-01-08</th>
+      <td>188.899994</td>
+      <td>186.330002</td>
+      <td>187.199997</td>
+      <td>188.279999</td>
+      <td>17994700</td>
+      <td>188.279999</td>
     </tr>
   </tbody>
 </table>
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="6">
+<div class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Open'</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'Microsoft'</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'Zoom'</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>SNOW_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'Snowflake'</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>AAPL_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'Apple'</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Volume'</span>)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'Microsoft'</span>)</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>ZOOM_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'Zoom'</span>)</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>SNOW_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'Snowflake'</span>)</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>AAPL_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'Apple'</span>)</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<pre><code>&lt;matplotlib.legend.Legend at 0x7fb87c7af550&gt;</code></pre>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'Meta'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>AAPL_stock[<span class="st">'Open'</span>].plot(label<span class="op">=</span><span class="st">'Match'</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Volume'</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>MSFT_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'Meta'</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>AAPL_stock[<span class="st">'Volume'</span>].plot(label<span class="op">=</span><span class="st">'Match'</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>plt.legend()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7feb12375160&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="2020-10-21-quant_data_datareader_quandl_files/figure-html/cell-5-output-2.png" class="img-fluid"></p>
+<p><img src="2022-10-01-quant_data_datareader_quandl_files/figure-html/cell-5-output-2.png" class="img-fluid"></p>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="2020-10-21-quant_data_datareader_quandl_files/figure-html/cell-5-output-3.png" class="img-fluid"></p>
+<p><img src="2022-10-01-quant_data_datareader_quandl_files/figure-html/cell-5-output-3.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="7">
@@ -442,7 +409,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f900d58fef0&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="2020-10-21-quant_data_datareader_quandl_files/figure-html/cell-25-output-2.png" class="img-fluid"></p>
+<p><img src="2022-10-01-quant_data_datareader_quandl_files/figure-html/cell-25-output-2.png" class="img-fluid"></p>
 </div>
 </div>
 
