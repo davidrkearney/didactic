@@ -1,9 +1,9 @@
 ---
-toc: true
-layout: post
-description: 40 năm ngày kỷ niệm đám cưới của ba mẹ
+title: "40 năm ngày kỷ niệm đám cưới của ba mẹ"
+author: "DRK"
+date: "2020-10-01"
 categories: [Family Letters]
-title: 40 năm ngày kỷ niệm đám cưới của ba mẹ
+image: "image.jpg"
 ---
 
 # 40 năm ngày kỷ niệm đám cưới của ba mẹ
